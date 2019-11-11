@@ -64,8 +64,7 @@ sudoUser(){
 
 gotoUser(){
     echo "SUing to your user"
-
-    echo "User added to sudo group"
+    su $username
 }
 
 cleanUser(){
