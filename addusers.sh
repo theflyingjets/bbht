@@ -1,4 +1,7 @@
 #!/bin/bash
+# Making a new user thats in the sudo group but is not root
+
+none = "none"
 
 #main fun
 init(){
@@ -8,6 +11,8 @@ init(){
     encryptPassword
     addsUser
     sudoUser
+	gotoUser
+	cleanUser
 }
 
 #Ask the user for their name
@@ -57,7 +62,19 @@ sudoUser(){
     echo "User added to sudo group"
 }
 
+gotoUser(){
+    echo "SUing to your user"
 
+    echo "User added to sudo group"
+}
+
+cleanUser(){
+    echo "Cleaning user"
+	$plaintext1 = $none
+	$plaintext2 = $none
+	$username = $none
+	echo $plaintext1
+}
 
 
 #Stays at bottom to start the main fun
