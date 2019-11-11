@@ -64,15 +64,13 @@ sudoUser(){
 
 gotoUser(){
     echo "SUing to your user"
-
-    echo "User added to sudo group"
+    su $username
 }
 
 cleanUser(){
     echo "Cleaning user"
-	$plaintext1 = $none
-	$plaintext2 = $none
-	$username = $none
+	$plaintext1 == $none
+	$plaintext2 == $none
 	echo $plaintext1
 }
 
