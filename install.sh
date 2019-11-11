@@ -1,4 +1,13 @@
 #!/bin/bash
+
+
+# Making a new user thats in the sudo group but is not root
+echo What is the username you want to have?
+read username
+echo "Please type a password?"
+
+
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
@@ -62,9 +71,9 @@ fi
 
 
 #Don't forget to set up AWS credentials!
-echo "Don't forget to set up AWS credentials!"
-apt install -y awscli
-echo "Don't forget to set up AWS credentials!"
+# echo "Don't forget to set up AWS credentials!"
+# apt install -y awscli
+# echo "Don't forget to set up AWS credentials!"
 
 
 
